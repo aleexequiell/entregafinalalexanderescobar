@@ -1,0 +1,32 @@
+.chicle {
+  font-family: Arial-;
+  font-size: 40px;
+  text-align: center;
+  margin: 30px;
+  padding: 0px;
+
+
+}
+
+.chicle:hover {
+  animation: 2s chicle 1;
+}
+
+@keyframes chicle {
+  30% {
+    transform: scaleX(1.5) scaleY(0.7);
+  }
+
+  40% {
+    transform: scaleX(0.7) scaleY(1.2);
+  }
+
+  60% {
+    transform: scaleX(1.1) scaleY(0.8);
+  }
+}
+
+%flex {
+  display: flex;
+  align-items: center;
+}

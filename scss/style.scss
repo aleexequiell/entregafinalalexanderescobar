@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@import "header colores chicle quien-soy cards";
+
+
+@mixin mQ($px) {
+  @media screen and (min-width: $px) {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $black;
+  font-family: "Inter", sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+
+}
+
+.container {
+  width: min(100% - 2em, 1180px);
+  margin: 0 auto;
+  padding: 15px;
+}
+
+ul {
+  margin: 10px;
+  padding: 10px;
+  list-style-type: none;
+}
+
+
+p {
+  color: $text-gray;
+  line-height: 1.6;
+}
+
+main {
+  padding: 0em 0 5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  width: min(100% - 2em, 1180px);
+  margin: 0 auto;
+  gap: 30px;
+
+  @include mQ(860px) {
+    margin-top: -10em;
+  }
+}

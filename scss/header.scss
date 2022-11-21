@@ -1,0 +1,61 @@
+header {
+    background-color: $bg-gray;
+    min-height: 350px;
+    text-align: center;
+    padding: 2em 0;
+
+    @include mQ(860px) {
+        min-height: 450px;
+    }
+
+    .hero-content {
+        .hero-flex {
+            @include mQ(860px) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            >div {
+                @extend %flex;
+                justify-content: center;
+                margin-bottom: 10px;
+
+                @include mQ(860px) {
+                    justify-content: flex-start;
+                    margin-bottom: 0;
+                }
+
+                a {
+                    color: $text-gray;
+                }
+            }
+
+            .arrow-left {
+                width: 15px;
+                color: $text-gray;
+            }
+
+            button {
+                font-size: 14px;
+                background: $white;
+                border: none;
+                padding: 15px 50px;
+                cursor: pointer;
+                box-shadow: $box-shadow;
+                font-weight: 600;
+                transition: 0.3s ease-in;
+                border-radius: $border-radius;
+                display: none;
+
+                @include mQ(860px) {
+                    display: inline-block;
+                }
+
+                &:hover {
+                    box-shadow: $box-shadow-hover;
+                }
+            }
+        }
+    }
+}

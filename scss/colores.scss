@@ -1,0 +1,20 @@
+$bg-gray: tan;
+$black: BLACK;
+$white: WHITE;
+$text-gray: BLACK;
+
+$border-radius: 5px;
+$box-shadow: 0px 0px 20px rgb(0 0 0 / 12%);
+$box-shadow-hover: 0px 0px 20px rgb(0 0 0 / 20%);
+
+$icon-list: (
+    twitter "\f099" #32b9e7,
+    facebook "\f09a" #4b70ab,
+    linkedin "\f0e1" #0087be,
+    instagram "\f16d" #6291b2,
+    github "\f113" #333333
+);
+
+.zonas {
+    background-color: tan;
+}
